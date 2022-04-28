@@ -14,27 +14,34 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <nav class="header-nav">
-          <a class="logo" href="./index.html"><span>Web</span>Studio</a>
-          <ul class="header-nav-list">
-            <li class="item"><a class="link" href="./index.html">Студия</a></li>
-            <li class="item"><a class="link current" href="./portfoio.html">Портфолио</a></li>
-            <li class="item"><a class="link" href="">Контакты</a></li>
+      <div class="container header__container">
+        <nav class="header__nav">
+          <a class="logo header__logo" href="./index.html"
+            >Web<span class="logo--lights-style">Studio</span></a
+          >
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="./index.html">Студия</a>
+            </li>
+            <li class="header__item">
+              <a class="header__link header__link--current" href="./portfoio.html">Портфолио</a>
+            </li>
+            <li class="header__item"><a class="header__link" href="">Контакты</a></li>
           </ul>
         </nav>
-        <div class="header-contacts">
-          <a class="header-contacts-link" href="mailto:info@devstudio.com">
-            <svg class="contacts-icon" width="16" height="12">
+        <div class="header__contacts">
+          <a class="header__contacts-link" href="mailto:info@devstudio.com">
+            <svg class="header__contacts-icon" width="16" height="12">
               <use href="./images/icons.svg#icon-mail"></use>
             </svg>
             info@devstudio.com</a
           >
-          <a class="header-contacts-link" href="tel:+380961111111">
-            <svg class="contacts-icon" width="10" height="16">
+          <a class="header__contacts-link" href="tel:+380961111111">
+            <svg class="header__contacts-icon" width="10" height="16">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +38 096 111 11 11</a
@@ -42,6 +49,7 @@
         </div>
       </div>
     </header>
+    <main>
     <section class="section">
       <div class="container">
         <!-- приховати <h1>Портфолио</h1>  -->
@@ -83,11 +91,11 @@
           <li class="projects-list-items">
             <a class="projects-link" href="">
               <div class="projects-img">
-                <p class="projects-info">
+                <!-- <p class="projects-info">
                   Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов.
                   Все это позволит посетителю получить исчерпывающие сведения о компании или частном
                   лице.
-                </p>
+                </p> -->
                 <img src="images/portfolio/pf-2.jpg" alt="Баскетболист" width="370" />
               </div>
               <div class="projects-description">
