@@ -1,0 +1,117 @@
+.callback {
+  display: flex;
+  flex-direction: column;
+
+  &__caption {
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    color: var(--title-text-color);
+  }
+  &__main-btn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.callback__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.callback__comment {
+  margin-bottom: 20px;
+}
+
+.callback__label {
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--primay-text-color);
+}
+
+.callback__input {
+  appearance: none;
+  outline: none;
+
+  display: block;
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid;
+  border-color: rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  &:focus {
+    border-color: var(--brand-color);
+  }
+
+  &:focus + .callback__icon {
+    fill: var(--brand-color);
+  }
+
+  &--textarea {
+    appearance: none;
+    outline: none;
+
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &:focus {
+      border-color: var(--brand-color);
+    }
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 1.16;
+      letter-spacing: 0.01em;
+
+      color: rgba(117, 117, 117, 0.5);
+    }
+  }
+}
+.callback__icon {
+  position: absolute;
+  bottom: 11px;
+  left: 12px;
+  fill: var(--title-text-color);
+}
+
+.callback__item-policy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  color: var(--primay-text-color);
+}
+
+.callback__icon-policy {
+  width: 16px;
+  height: 15px;
+  margin-right: 8px;
+  border: 2px solid var(--title-text-color);
+  border-radius: 2px;
+
+  .callback__input-policy:checked + & {
+    border-color: var(--brand-color);
+    background-color: var(--brand-color);
+    background-image: url(../images/icon/icon-check.svg);
+    background-size: contain;
+    background-origin: border-box;
+  }
+}
+
+.callback__link-policy {
+  color: var(--brand-color);
+  text-decoration: underline;
+}
