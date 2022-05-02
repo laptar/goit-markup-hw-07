@@ -1,2 +1,2 @@
-# goit-markup-hw-06
-Training repository, homework 6
+# goit-markup-hw-07
+Training repository, homework 7
